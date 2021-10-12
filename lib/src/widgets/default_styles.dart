@@ -18,7 +18,7 @@ class QuillStyles extends InheritedWidget {
 
   static DefaultStyles? getStyles(BuildContext context, bool nullOk) {
     final widget = context.dependOnInheritedWidgetOfExactType<QuillStyles>();
-    if (widget == null && nullOk) {
+    if (widget == null || nullOk) {
       return null;
     }
     assert(widget != null);
