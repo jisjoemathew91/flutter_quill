@@ -21,7 +21,7 @@ class QuillStyles extends InheritedWidget {
     if (widget == null && nullOk) {
       return null;
     }
-    // assert(widget != null);
+    assert(widget != null);
     return widget!.data;
   }
 }
